@@ -32,7 +32,7 @@ Just open terminal and install the ncurses library:
 
 	sudo apt-get install ncurses
 
-Then navigate to the directory within the "ExpeditionAdventure" folder called "code" and run the following command:
+Then navigate to the directory where the code is located and run the following command:
 
 	gcc -o expeditionadventure main.c player.c map.c -lncurses
 
