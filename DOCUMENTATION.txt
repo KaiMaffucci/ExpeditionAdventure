@@ -1,0 +1,83 @@
+VERSION ALPHA 0.1
+
+	--- DOCUMENTATION ---
+
+This is the documentation for the Expedition Adventure game.
+ 
+
+	--- VARIABLES, CONSTANTS, ARRAYS, STRUCTS, AND FUNCTIONS
+ ---
+HEADER FILE CONSTANTS:
+
+	DELAY: used for making a short delay, like in between ticks.
+ 
+	LONGDELAY: used to make a REALLY long delay
+
+	Any kind of constant that ends with "_CLR" is a color pair constant for ncurses color pairs.
+ 
+	MIN_SELECT_Y: minimum y value for the select screen cursor
+
+	MAX_SELECT_Y: max  imum y value for the select screen cursor
+
+	MIN_PLR_X: minimum x value allowed for the player on the coordinate plane.
+ 
+	MAX_PLR_X: maximunm x value allowed for the player on the coordinate plane.
+ 
+	MIN_PLR_Y: minimum y value allowed for the player on the coordinate plane.
+ 
+	MAX_PLR_Y: maximum y value allowed for the player on the coordinate plane.
+ 
+	BIOME_COUNT: the number of biomes that are used in random generation, NOT including glacier biome
+
+
+HEADER FILE STRUCTS:
+
+	Map: is the typedef struct for map making. Contains the biome and the actual array map itself as members.
+
+
+FUNCTIONS WITH PROTOTYPE IN HEADER:
+
+	void movplr(int *x, int *y);
+
+		checks the keyboard for input and moves the player appropriatley. Takes the player's coordinate x and y values memory addresses as parameters.
+
+	void genMap(Map *mapin, char biomein);
+
+		generates a map with the given map array. Parameters are the memory address of the map and then the biome you would like to have the map generate.
+ 
+	void printMap(Map *mapin);
+
+		prints a map on the screen. Parameter is the memory address of the map you would like to print.
+  
+	void displayBorders();
+
+		prints the text borders on the screen and thats it.
+ 
+	void tileDescription();
+
+		prints the description of the tile that the player is currently on
+
+
+MAIN LOCAL VARIABLES & ARRAYS:
+
+	plrx & plry: the coords for the player.
+ 
+	r: for generating random int
+
+	i: for loops
+
+	r: for random values
+
+	gen_biome: used to choose which biome to generate the map as.
+
+	Maps: is an array of data type Map, contains every map in the game.
+ 
+	biomes: array of all of the biomes used in random generation.
+ 
+	ch: used for getting user input as a character
+
+	playing: used to determine if the player is alive/playing still, used like a boolean
+
+	start_screen_enter_pressed: used like a boolean to store if enter is pressed on the start screen
+
+	current_world_map_x & current_world_map_y: stores the coords of which chunk/small map is being displayed

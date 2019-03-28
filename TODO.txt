@@ -1,0 +1,34 @@
+    --- TODO ---
+
+Future features:
+
+ - make it so that the player cannot survive for long in a glacier or hot biome without protection
+
+ - saving a world and reopening it
+
+ - add special skills for player that are gained when a player finds a "mystic object" or something
+
+ - a lot will have to be added alongside this to be able to make it work, like an in-game selection screen using IJKL and another button to select and one to go back
+
+ - a feature that when you press a key it pauses the game and displays the world map until you unpause
+
+ - add feature where you can press a key and get info on whatever tile you are on and what is on it
+
+ - make it generate structures, like bodies of water
+ 
+    and abandoned shacks where you cannot pass through the walls
+
+ - add enemies of some kind
+ - other NPCs of some sort
+ - being able to interact with the environment
+ Ideas:
+
+    1. Evil beings that will make you respawn and lose all your items, but they move very slowly and in a specific region, like in the evil biome
+
+ - add weather (probably a new file for it)
+
+    1. Rain & lightning
+
+    2. Snow
+
+    3. windy storm that kind of pushes you around
